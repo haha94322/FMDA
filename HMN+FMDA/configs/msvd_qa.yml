@@ -1,0 +1,31 @@
+gpu_id: 0
+multi_gpus: False
+num_workers: 0
+seed: 666
+exp_name: 'expMSVD-QA'
+
+train:
+  lr: 0.00005
+  batch_size: 32
+  restore: False
+  max_epochs: 100
+  word_dim: 300
+  module_dim: 512
+  glove: True
+  k_max_frame_level: 16
+  k_max_clip_level: 16
+  spl_resolution: 3
+
+val:
+  flag: True
+
+test:
+  test_num: 0
+  write_preds: False
+
+dataset:
+  name: 'msvd-qa'
+  question_type: 'none'
+  bert_dir: '/home/lmy/code/feature_extraction/bert_linguistic_feature_extraction_key/pretrain'
+  data_dir: '/media/lmy/processing/dataset/paper6/MSVD-1854'
+  save_dir: '/media/lmy/data1/lmy/result/paper6_fly'

@@ -1,0 +1,30 @@
+gpu_id: 0
+multi_gpus: False
+num_workers: 16
+seed: 666
+exp_name: 'expTGIF-QACount'
+
+train:
+  lr: 0.0001
+  batch_size: 32
+  restore: False
+  max_epochs: 25
+  word_dim: 300
+  module_dim: 512
+  glove: True
+  k_max_frame_level: 16
+  k_max_clip_level: 8
+  spl_resolution: 1
+
+val:
+  flag: True
+
+test:
+  test_num: 0
+  write_preds: False
+
+dataset:
+  name: 'tgif-qa'
+  question_type: 'count'
+  data_dir: '/media/lmy/dataprocess/hcrn-features/tgif-qa/count'
+  save_dir: '/media/lmy/data_back/results_HCRN'
