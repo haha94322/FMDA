@@ -8,7 +8,7 @@ MFDA Unit
 
 
 ## evaluate on VideoQA
-download our pre-extracted features and Pretrained model for VideoQA from https://pan.baidu.com/s/1DieJkCFaW1jzp5EuFes5Jw?pwd=mdi5 提取码: mdi5 and save them in `data` folder.
+download our pre-extracted features and Pretrained model for VideoQA from https://pan.baidu.com/s/1DieJkCFaW1jzp5EuFes5Jw?pwd=mdi5 提取码: mdi5.
    
 
 
